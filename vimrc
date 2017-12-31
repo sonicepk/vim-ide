@@ -81,8 +81,9 @@ set dictionary=/usr/share/dict/words
 set backupskip=/tmp/*,/private/tmp/*"
 
 " ========================================================================================
+" disable Mouse EK - 
 " Enable Mouse
-set mouse=a
+"set mouse=a
 
 " ========================================================================================
 "Settings for Searching and Moving
@@ -620,7 +621,7 @@ if &diff
     "autocmd VimEnter * NERDTree .
 else 
     autocmd VimEnter * NERDTree .
-    autocmd VimEnter * TagbarOpen
+"Disable Tagbar EK   autocmd VimEnter * TagbarOpen
     autocmd VimEnter * helptags ~/.vim/doc
     autocmd VimEnter * exe 2 . "wincmd w"
     autocmd VimEnter * call CheckIfMain()
